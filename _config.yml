@@ -102,8 +102,8 @@ analytics:
 # Site Author
 author:
   name             : "k4lelv"
-  avatar           : "/assets/images/avatar.png"
-  bio              : "Student, HALO player<br>HackTheBox comunity<br>Programmer"
+  avatar           : "/assets/images/spidey.jpg"
+  bio              : "Student, HALO player<br>HTB pentesting<br>Programmer"
   location         : "Nicaragua"
   email            : "hacavita5@gmail.com"
   uri              :
