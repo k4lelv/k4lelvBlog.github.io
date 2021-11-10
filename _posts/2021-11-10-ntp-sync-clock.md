@@ -17,7 +17,7 @@ tags:
 
 ---
 <p align = "Center">
-    <img src="//assets/images/ntpSync/imgNtpSync.jpg">
+    <img src="/assets/images/imgNtpSync.jpg">
 </p>
 
 Uno de los comandos mas útiles en Linux es NTP (Network Time Protocol) el cual se encarga de sincronizar de forma automática la hora de nuestro [servidor en red](https://www.solvetic.com/page/recopilaciones/s/recopilacion/mejores-distribuciones-para-servidor-linux) y esto es un punto delicado cuando hablamos de un equipo en ambientes productivos ya que una mala sincronización de la hora puede llegar a afectar diversas tareas y mas si el equipo es un servidor.
