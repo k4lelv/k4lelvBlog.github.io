@@ -25,11 +25,11 @@ El equipo puede hacer permitir que el reloj del sistema haga uso del Tiempo Univ
 ---------------
 1. Instalamos NTP en nuestra maquina linux
 
-´´´
+```
 sudo apt-get install ntpdate (Debian/Ubuntu)
 sudo yu install ntpdate      (CentOS/RHEL)
 sudo dnf install ntpdate     (Fedora)
-´´´
+```
 
 
 
