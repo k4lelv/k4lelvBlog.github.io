@@ -30,3 +30,23 @@ sudo apt-get install ntpdate (Debian/Ubuntu)
 sudo yu install ntpdate      (CentOS/RHEL)
 sudo dnf install ntpdate     (Fedora)
 ´´´
+
+
+
+```
+slemire@slae:~$ gcc -o test -fno-stack-protector -z execstack shellcode.c 
+slemire@slae:~$ ./test
+[...]
+slemire@slae:~$ nc -nv 127.0.0.1 5555
+Connection to 127.0.0.1 5555 port [tcp/*] succeeded!
+whoami
+slemire
+```
+
+This blog post has been created for completing the requirements of the SecurityTube Linux Assembly Expert certification:
+
+[http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/](http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/)
+
+Student ID: SLAE-1236
+
+All source files can be found on GitHub at [https://github.com/slemire/slae32](https://github.com/slemire/slae32)
