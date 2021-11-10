@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Snowscan"
-  avatar           : "/assets/images/spidey.png"
+  avatar           : "/assets/images/spidey.jpg"
   bio              : "Programmer/ Student/ Halo's world Fan<br>HackTheBox Student"
   location         : "Nicaragua"
   email            : "tobymac747@gmail.com"
