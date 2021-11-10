@@ -1,6 +1,6 @@
 ---
-title: "Acerca de"
+title: "About"
 permalink: /about/
-date: 2021-08-08
+date: 2019-02-15
 ---
 

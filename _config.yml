@@ -16,18 +16,14 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "k4lelv | Blog"
+title                    : "snowscan.io"
 title_separator          : "-"
-name                     : "k4lelv info"
+name                     : "Snowscan"
 description              : "Posts about security, CTFs and networking"
-url                      : "https://k4lelv.github.io/k4lelvBlog.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://snowscan.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "k4lelv/k4lelv.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-<<<<<<< HEAD
+repository               : "slemire/slemire.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 logo                     : "/assets/images/masthead.png"
-=======
-logo                     : "/assets/images/masterhead.png"
->>>>>>> 34786793e98047645d86e84ed79025da5ea3f245
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -40,7 +36,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            :  5 (default)
+    num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
@@ -105,11 +101,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "k4lelv"
-  avatar           : "/assets/images/spidey.jpg"
-  bio              : "Student, HALO player<br>HTB pentester<br>Programmer"
-  location         : "Nicaragua"
-  email            : "hacavita5@gmail.com"
+  name             : "Snowscan"
+  avatar           : "/assets/images/avatar.png"
+  bio              : "Pentester, CTF player<br>HackTheBox ATeam"
+  location         : "Canada"
+  email            : "info@snowscan.io"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -118,10 +114,10 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "k4lelv"
+  github           : "slemire"
   gitlab           :
   google_plus      :
-  keybase          : #"snowscan"
+  keybase          : "snowscan"
   instagram        :
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
@@ -130,7 +126,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : #"snowscan"
+  twitter          : "snowscan"
   vine             :
   weibo            :
   xing             :
