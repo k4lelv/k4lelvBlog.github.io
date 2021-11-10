@@ -33,3 +33,14 @@ sudo apt-get install ntpdate (Debian/Ubuntu)
 sudo yu install ntpdate      (CentOS/RHEL)
 sudo dnf install ntpdate     (Fedora)
 ```
+2. Cómo usar NTP desde linux
+
+```
+// Asi establecemos el servidor como servidor NTP
+sudo ntp co.pool.ntp.org
+```
+
+```
+// Si deseamos consultar el servidor pero sin configurar el reloj ni usar un puerto sin privilegios para enviar los paquetes y para evitar los firewalls, debemos ejecutar 
+sudo ntpdate -qu co.pool.ntm.org
+```
