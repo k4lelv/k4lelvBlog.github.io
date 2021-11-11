@@ -5,7 +5,7 @@ excerpt: "Durante los últimos meses, hemos visto noticias por todos lados de da
 date: 2020-01-29
 classes: wide
 header:
-  teaser: /assets/images/hospital-dicom/dicom.png
+  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/hospital-dicom/dicom.png
   teaser_home_page: true
 categories:
   - Research
@@ -15,7 +15,7 @@ tags:
   - Radiant
 ---
 
-![](/assets/images/hospital-dicom/dicom.png)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/hospital-dicom/dicom.png)
 
 Durante los últimos meses, hemos visto noticias por todos lados de datos médicos de pacientes los cuales han quedado expuestos por internet. Es algo alarmante pero no sorprendente teniendo en cuenta cómo está la seguridad a día de hoy. 
 
@@ -35,11 +35,11 @@ Una imagen médica por sí misma no aporta suficiente información... para que s
 
 El problema reside en que una gran cantidad de estos servicios están expuestos en internet, visibles desde Shodan:
 
-![](/assets/images/hospital-dicom/dicom-shodan.png)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/hospital-dicom/dicom-shodan.png)
 
 Asimismo, para los que ya hayáis usado Shodan otras veces... como bien sabréis, es posible hasta ajustar nuestras `queries` con ciertos parámetros adicionales:
 
-![](/assets/images/hospital-dicom/dicom-shodan-filter.png)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/hospital-dicom/dicom-shodan-filter.png)
 
 Y aquí es donde viene la pregunta, ¿cómo me conecto ahora al servicio?, gran pregunta Myke. 
 
@@ -55,19 +55,19 @@ Para evitar problemas, no voy a explicar el procedimiento para llevar a cabo la 
 
 Os voy a mostrar un ejemplo de qué es lo que se vería una vez estando asociados a uno de ellos:
 
-![](/assets/images/hospital-dicom/dicom-connected.png)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/hospital-dicom/dicom-connected.png)
 
 Como podréis ver, se obtiene una lista de todos los pacientes (**134 pacientes**) del centro médico en cuestión. Figuran numerosos campos, entre ellos el nombre del paciente, el tipo de reconocimiento médico que se está aplicando, su fecha de nacimiento, número de teléfono y otros datos de contacto.
 
 Como os dije anteriormente, **Radiant DICOM Viewer** sirve para procesar y visualizar imágenes médicas en formato DICOM. En caso de querer ver estas imágenes médicas, basta con hacer doble click en el paciente cuyos informes médicos queramos consultar:
 
-![](/assets/images/hospital-dicom/dicom-radiografia.png)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/hospital-dicom/dicom-radiografia.png)
 
 Al tratarse de una imagen, en este artículo no se aprecia, pero cada muestra viene acompañada de múltiples capturas, pudiendo ver una animación de la resonancia al presionar la tecla `Enter`.
 
 De hecho, en caso de que una muestra posea múltiples capturas, se puede hacer incluso un modelaje 3D en base a los resultados obtenidos:
 
-![](/assets/images/hospital-dicom/dicom-3d.png)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/hospital-dicom/dicom-3d.png)
 
 ## ¿Qué demonios está pasando aquí?
 

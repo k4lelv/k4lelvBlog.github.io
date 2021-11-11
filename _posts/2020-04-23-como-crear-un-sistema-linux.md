@@ -5,7 +5,7 @@ excerpt: "En este artículo, os enseño a crear vuestro propio sistema Linux des
 date: 2020-04-23
 classes: wide
 header:
-  teaser: /assets/images/s4viOS/s4viOS.png
+  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/s4viOS/s4viOS.png
   teaser_home_page: true
 categories:
   - Configuración

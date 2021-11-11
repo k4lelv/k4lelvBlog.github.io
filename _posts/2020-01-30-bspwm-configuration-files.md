@@ -5,7 +5,7 @@ excerpt: "En este artículo comparto algunos de los archivos que creamos en el v
 date: 2020-01-30
 classes: wide
 header:
-  teaser: /assets/images/bspwm/bspwm-background.jpg
+  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/bspwm/bspwm-background.jpg
   teaser_home_page: true
 categories:
   - YouTube
@@ -19,7 +19,7 @@ tags:
   - Powerlevel10k
 ---
 
-![](/assets/images/bspwm/bspwm-background.jpg)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/bspwm/bspwm-background.jpg)
 
 Para el que no sepa de lo que estamos hablando, toda la configuración que se define en este artículo es la detallada en el siguiente vídeo mi canal de YouTube:
 

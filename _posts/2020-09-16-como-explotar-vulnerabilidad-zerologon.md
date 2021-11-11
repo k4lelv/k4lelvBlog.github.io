@@ -5,7 +5,7 @@ excerpt: "Mucho se está hablando acerca de la nueva vulnerabilidad Zerologon, p
 date: 2020-09-16
 classes: wide
 header:
-  teaser: /assets/images/zerologon/zerologon.png
+  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/zerologon/zerologon.png
   teaser_home_page: true
 categories:
   - Research
@@ -22,7 +22,7 @@ tags:
   - Privilege Escalation
 ---
 
-![](/assets/images/zerologon/zerologon.png)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/zerologon/zerologon.png)
 
 ## ¿Es realmente crítico Zerologon?
 
@@ -46,13 +46,13 @@ Una vez tengamos ya el Domain Controller operando, podremos empezar. La direcci�
 Partiendo de este punto, estos son los resultados obtenidos al lanzar el tester sobre el DC:
 
 <p align="center">
-<img src="/assets/images/zerologon/1.png">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/zerologon/1.png">
 </p>
 
 Toda la información referente al nombre de equipo, dominio y demás puede obtenerse rápidamente desde CrackMapExec con un simple escaneo por Samba:
 
 <p align="center">
-<img src="/assets/images/zerologon/2.png">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/zerologon/2.png">
 </p>
 
 En base a los resultados de la primera foto, vemos que el DC es vulnerable. Lo único que nos queda por tanto es explotar la vulnerabilidad.
@@ -97,7 +97,7 @@ Resolviendo deltas: 100% (14103/14103), listo.
 Una vez hecho, la ejecución del exploit debe devolver un output como este en caso de éxito:
 
 <p align="center">
-<img src="/assets/images/zerologon/3.png">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/zerologon/3.png">
 </p>
 
 Si esto es así, ya todo lo demás está hecho. Lo único que tendríamos que hacer, tal y como nos indica el README del siguiente recurso:
@@ -119,7 +119,7 @@ secretsdump.py -hashes :31d6cfe0d16ae931b73c59d7e0c089c0 's4vicorp/DC-Company$@1
 Obteniendo los siguientes resultados tras su ejecución:
 
 <p align="center">
-<img src="/assets/images/zerologon/4.png">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/zerologon/4.png">
 </p>
 
 Conseguimos listar los hashes de todos los usuarios existentes a nivel de dominio, incluido aquellos que sean administradores del dominio. Básicamente el mismo efecto que obtendríamos si desde CrackMapExec hubiéramos hecho uso de la acción `--ntds vss`, pero claro... en ese caso habríamos necesitado credenciales válidas, lo bueno del Zerologon es que no hace falta nada de eso :)

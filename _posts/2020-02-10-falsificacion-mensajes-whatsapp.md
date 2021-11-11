@@ -5,7 +5,7 @@ excerpt: "En este artículo, os muestro cómo es posible manipular los mensajes 
 date: 2020-02-10
 classes: wide
 header:
-  teaser: /assets/images/whatsapp-fake-messages/whatsapp.jpg
+  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg
   teaser_home_page: true
 categories:
   - Research
@@ -16,7 +16,7 @@ tags:
 ---
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/whatsapp.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg">
 </center>
 
 ## ¿Cómo reproducir este bug?
@@ -26,28 +26,28 @@ Antes que nada, vamos a darle los buenos créditos al señor [@RiftWhiteHat](htt
 Comenzamos presionando la combinación `Ctrl+Shift+C`. Posteriormente, nos dirigimos a la pestaña `Sources` desde WhatsApp Web:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step1.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step1.jpg">
 </center>
 
 <br>
 Una vez hecho, nos iremos a la pestaña `Search` situada en la zona inferior y buscaremos la cadena `Promise.callSynchronously(function()`
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step2.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step2.jpg">
 </center>
 
 <br>
 Veremos que se produce un match. Haremos click en el resultado obtenido y posteriormente en la zona superior seleccionamos el modo de visión `Pretty Print` para que no nos sangren los ojos:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step3.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step3.jpg">
 </center>
 
 <br>
 Ya en este punto, presionaremos la combinación de teclas `Ctrl+F` y buscaremos nuevamente por la cadena `Promise.callSynchronously(function()`. En esta ocasión, buscaremos el segundo match que se produzca:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step4.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step4.jpg">
 </center>
 
 <br>
@@ -55,7 +55,7 @@ Ya en este punto, presionaremos la combinación de teclas `Ctrl+F` y buscaremos 
 Posteriormente, establecemos un `Breakpoint` en la sección `var t = e.id;`, haciendo para ello click en el número de la línea:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step5.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step5.jpg">
 </center>
 
 <br>
@@ -65,7 +65,7 @@ Ahora, lo que haremos será lo siguiente. Nos iremos a una conversación cualqui
 Escribiremos como respuesta lo que queramos, yo en este caso he escrito `No sé si conocerás el canal de k4lelv`. Tras enviar el mensaje, veremos que alcanzamos el `Breakpoint` y que el mensaje no llega a enviarse:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step6.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step6.jpg">
 </center>
 
 <br>
@@ -73,7 +73,7 @@ Escribiremos como respuesta lo que queramos, yo en este caso he escrito `No sé 
 Si nos vamos a la pestaña `Console` dentro de la pestaña `Sources`, veremos que en este preciso instante podemos desglosar `e`, pudiendo así ver todos los atributos que hacen referencia a la conversación que estamos llevando a cabo:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step7.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step7.jpg">
 </center>
 
 <br>
@@ -83,7 +83,7 @@ En este caso, muestro sólo una porción para no compartir información privileg
 Ya en este punto, podremos manipular el mensaje de mención al que estamos respondiendo de la siguiente forma:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step8.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step8.jpg">
 </center>
 
 <br>
@@ -91,7 +91,7 @@ Ya en este punto, podremos manipular el mensaje de mención al que estamos respo
 Lo único que tendremos que hacer posteriormente es darle al `Play` para que el mensaje siga su flujo y salgamos del `Breakpoint`:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step9.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step9.jpg">
 </center>
 
 <br>
@@ -99,7 +99,7 @@ Lo único que tendremos que hacer posteriormente es darle al `Play` para que el 
 Una vez hecho, podremos ver lo siguiente:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step10.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step10.jpg">
 </center>
 
 <br>
@@ -109,7 +109,7 @@ Hemos falsificado el mensaje al cual hacemos mención, haciendo creer al destina
 Todo esto desde WhatsApp web, y te preguntarás... ¿cómo se ve desde el móvil?, pues se vería exactamente igual:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step11.jpg" width="400">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step11.jpg" width="400">
 </center>
 
 <br>
@@ -123,7 +123,7 @@ Existen montón de valores que se pueden alterar, los cuales han llegado incluso
 Este último en concreto ha sido parcheado, sin embargo sólo en el ámbito grupal (grupos de WhatsApp), en el sentido de que ya no afecta a los componentes de un grupo, sino al propio emisor del mensaje especialmente diseñado:
 
 <center>
-<img src="/assets/images/whatsapp-fake-messages/step12.jpg" width="400">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step12.jpg" width="400">
 </center>
 
 <br>

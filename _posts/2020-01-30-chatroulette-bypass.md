@@ -5,7 +5,7 @@ excerpt: "Hoy os vengo a mostrar un bypassing de lo más absurdo en la plataform
 date: 2020-01-30
 classes: wide
 header:
-  teaser: /assets/images/chatroulette-bypass/chatroulette-main.jpg
+  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/chatroulette-main.jpg
   teaser_home_page: true
 categories:
   - Research
@@ -15,7 +15,7 @@ tags:
   - Bypassing
 ---
 
-![](/assets/images/chatroulette-bypass/chatroulette-main.jpg)
+![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/chatroulette-main.jpg)
 
 Hoy os vengo a mostrar un bypassing de lo más absurdo en la plataforma de Chatroulette. Supongo que sabréis que a la hora de entrar en Chatroulette se lleva a cabo una especie de validación, donde te piden que sonrías para que tu cara quede registrada en el sistema y posteriormente puedas acceder. Pues atentos a la jugada.
 
@@ -24,7 +24,7 @@ Hoy os vengo a mostrar un bypassing de lo más absurdo en la plataforma de Chatr
 Resulta que estaba yo tan tranquilo dispuesto a buscar a **Julio Ureña** en la plataforma de Chatroulette, cuando vi que para empezar a conectar con gente se me solicitaba la siguiente información:
 
 <p align="center">
-<img src="/assets/images/chatroulette-bypass/smile.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/smile.jpg">
 </p>
 
 Al parecer debes de sonreir frente a la cámara para ya comenzar a usar el servicio. Esta fase me interesó mucho, ¿de qué forma se hace la validación?... es lo que mi mente inquieta se preguntaba.
@@ -32,13 +32,13 @@ Al parecer debes de sonreir frente a la cámara para ya comenzar a usar el servi
 Dado que `Burpsuite` siempre responde a estas preguntas, probé a tirar de nuestro querido proxy para ver cómo viajaban las consultas. Desde que presionas `Start`, empiezan a viajar una serie de WebSockets con valores que identifican entre otras cosas nuestro `UserToken`:
 
 <p align="center">
-<img src="/assets/images/chatroulette-bypass/burp-first.png">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/burp-first.png">
 </p>
 
 Justo en el momento en el que se comienza a buscar una sonrisa del lado de nuestra cámara, se inicia un proceso de `ClientPing`, bajo el cual se saca un Snapshot para posteriormente del lado del servidor interpretar la imagen :
 
 <p align="center">
-<img src="/assets/images/chatroulette-bypass/clientping.png">>
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/clientping.png">>
 </p>
 
 ## Checking absurdo
@@ -46,7 +46,7 @@ Justo en el momento en el que se comienza a buscar una sonrisa del lado de nuest
 La gran fase de validación viene ahora. Si presionamos varias veces en `Forward`, de pronto podremos notar algo que llama mucho la atención:
 
 <p align="center">
-<img src="/assets/images/chatroulette-bypass/base64.png">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/base64.png">
 </p>
 
 La misma pregunta que te estás haciendo es la que me hice yo en su momento, ¿qué demonios es esto?. 
@@ -64,7 +64,7 @@ content: PNG image data, 640 x 480, 8-bit/color RGBA, non-interlaced
 Efectivamente, una imagen, ¿y a qué corresponde esta imagen?, a la instantánea que se realiza:
 
 <p align="center">
-<img src="/assets/images/chatroulette-bypass/instantanea-base64.png">>
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/instantanea-base64.png">>
 </p>
 
 ## Bypassing de la sonrisa
@@ -72,7 +72,7 @@ Efectivamente, una imagen, ¿y a qué corresponde esta imagen?, a la instantáne
 ¿Cómo hacemos por tanto para bypassear este sistema de validación y no tener que sonreir de nuestro lado para conectar con Julio?, pues bueno... simplemente tendríamos que coger una foto cualquiera de internet en la que salga alguien sonriendo:
 
 <p align="center">
-<img src="/assets/images/chatroulette-bypass/smile-girl.jpeg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/smile-girl.jpeg">
 </p>
 
 La pasamos a base64 desde consola:
@@ -89,7 +89,7 @@ Y sustituimos el nuevo valor en base64 por el que previamente Burpsuite nos ha i
 Tras hacerlo, la validación se habrá aplicado y ya podremos empezar a conectar con los demás sin haber sido necesario de nuestro lado sonreir y mostrar el rostro:
 
 <p align="center">
-<img src="/assets/images/chatroulette-bypass/man.jpg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/man.jpg">
 </p>
 
 Posteriormente, estuvimos debatiendo este señor y yo la máquina BigHead de HackTheBox, donde me comentaba una vía no intencionada de explotación para acceder al sistema, un grande este señor.

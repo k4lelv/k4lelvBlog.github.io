@@ -5,7 +5,7 @@ excerpt: "Para aquellos interesados en certificarse de OSCP, por aquí os dejo u
 date: 2020-02-04
 classes: wide
 header:
-  teaser: /assets/images/oscp-preparation/oscp-logo.png
+  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/oscp-preparation/oscp-logo.png
   teaser_home_page: true
 categories:
   - Certificaciones

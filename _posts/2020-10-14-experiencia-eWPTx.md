@@ -5,7 +5,7 @@ excerpt: "Recientemente me he sacado la certificación eWPTxv2, ¿qué tan difí
 date: 2020-10-14
 classes: wide
 header:
-  teaser: /assets/images/eWPTxv2/eWPTxv2.png
+  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/eWPTxv2/eWPTxv2.png
   teaser_home_page: true
 categories:
   - Certificaciones
@@ -19,7 +19,7 @@ tags:
 ---
 
 <p align="center">
-<img src="/assets/images/eWPTxv2/eWPTxv2.jpeg">
+<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/eWPTxv2/eWPTxv2.jpeg">
 </p>
 
 ## Certificación eWPTxv2
