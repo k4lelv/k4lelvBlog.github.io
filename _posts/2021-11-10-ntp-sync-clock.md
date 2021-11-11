@@ -46,3 +46,4 @@ sudo ntp co.pool.ntp.org
 // Si deseamos consultar el servidor pero sin configurar el reloj ni usar un puerto sin privilegios para enviar los paquetes y para evitar los firewalls, debemos ejecutar 
 sudo ntpdate -qu co.pool.ntm.org
 ```
+`Toda la lista de servidores NTP disponibles la encontramos en [SERVIDORES NTP](http://www.pool.ntp.org/es/)`
