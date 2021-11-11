@@ -2,6 +2,7 @@
 
 layout: single
 title: Como Sincronizar hora con NTP en Linux
+excerpt: "Uno de los comandos mas útiles en Linux es NTP (Network Time Protocol) el cual se encarga de sincronizar de forma automática la hora de nuestro servidor en red y esto es un punto delicado cuando hablamos de un equipo en ambientes productivos ya que una mala sincronización de la hora puede llegar a afectar diversas tareas y mas si el equipo es un servidor."
 date: 2021-11-10
 classes: wide
 header:
