@@ -18,9 +18,7 @@ tags:
 
 ---
 ![](https://images.unsplash.com/photo-1499686934070-fde9d797e48c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
-<p align = "Center">
-    <img src="https://images.unsplash.com/photo-1499686934070-fde9d797e48c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
-</p>
+
 
 Uno de los comandos mas útiles en Linux es NTP (Network Time Protocol) el cual se encarga de sincronizar de forma automática la hora de nuestro [servidor en red](https://www.solvetic.com/page/recopilaciones/s/recopilacion/mejores-distribuciones-para-servidor-linux) y esto es un punto delicado cuando hablamos de un equipo en ambientes productivos ya que una mala sincronización de la hora puede llegar a afectar diversas tareas y mas si el equipo es un servidor.
 
@@ -47,3 +45,6 @@ sudo ntp co.pool.ntp.org
 sudo ntpdate -qu co.pool.ntm.org
 ```
 `Toda la lista de servidores NTP disponibles la encontramos en [SERVIDORES NTP](http://www.pool.ntp.org/es/)`
+
+Allí en la parte de la derecha, econtramos cada una de  las regiones mundiales
+![](https://www.solvetic.com/uploads/monthly_04_2018/tutorials-7463-0-25672700-1525073397.png)
