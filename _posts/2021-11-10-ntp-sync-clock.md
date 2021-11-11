@@ -44,7 +44,41 @@ sudo ntp co.pool.ntp.org
 // Si deseamos consultar el servidor pero sin configurar el reloj ni usar un puerto sin privilegios para enviar los paquetes y para evitar los firewalls, debemos ejecutar 
 sudo ntpdate -qu co.pool.ntm.org
 ```
-`Toda la lista de servidores NTP disponibles la encontramos en [SERVIDORES NTP](http://www.pool.ntp.org/es/)`
 
-Allí en la parte de la derecha, econtramos cada una de  las regiones mundiales
+Toda la lista de servidores NTP disponibles la encontramos en [SERVIDORES NTP](http://www.pool.ntp.org/es/)
+
+Allí en la parte de la derecha, econtramos cada una de  las regiones mundiales.
+
 ![](https://www.solvetic.com/uploads/monthly_04_2018/tutorials-7463-0-25672700-1525073397.png)
+
+Al pulsar sobre un continente, y el respectivo pais de su elección se puede observar la lista de todos los servidores disponibles para usar.
+
+![](https://www.solvetic.com/uploads/monthly_04_2018/tutorials-7463-0-74176500-1525073396.png)
+
+
+#### En algunas distribuciones de linux mas reciente, las cuales cuentan con Systemd, es posible actualizar la hora atravez del archivo timesyncd.conf, lo puede usar con cualquier editor de texto que use.
+
+```
+sudo nano /etc/systemd/timesyncd.conf
+```
+
+### Allí debemos descomentar las siguientes líneas bajo [Time] y añadir el servidor según sea necesario
+
+```
+NTP=server 0.south-america.pool.ntp.org
+FallbackNTP=ntp.ubuntu.com 0.arch.pool.ntp.org
+```
+
+![](https://www.solvetic.com/uploads/monthly_04_2018/tutorials-7463-0-20505900-1525073396.png)
+
+Luego será necesario hacer el cambio efectivo al servidor NTP 
+
+```
+sudo timedatectl set-ntp true
+timedatectl status
+```
+
+Y listo!!
+
+
+Para mas detalles visitar [https://www.solvetic.com](https://www.solvetic.com/tutoriales/article/5327-como-sincronizar-hora-con-ntp-en-linux/)
